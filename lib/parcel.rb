@@ -11,6 +11,6 @@ class Parcel
     @length * @height * @depth
   end
   define_method(:cost_to_ship) do
-    @weight + (self.volume() * 0.5)
+    (@weight + (self.volume() * 0.5)).to_i()
   end
 end
